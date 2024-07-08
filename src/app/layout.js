@@ -15,9 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div style={{ height: `${headerHeight}px` }}>
-          <div className="p-5">logo</div>
-        </div>
+        <div style={{ height: `${headerHeight}px` }}></div>
         <div
           className="relative"
           style={{ minHeight: `calc(100vh - ${headerHeight}px)` }}

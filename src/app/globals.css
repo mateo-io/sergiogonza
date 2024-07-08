@@ -7,3 +7,13 @@
     text-wrap: balance;
   }
 }
+
+@import url("/amelaryas.ttf");
+
+.font-amelaryas {
+  font-family: "Amelaryas";
+}
+
+.font-inter {
+  font-family: "Inter";
+}
