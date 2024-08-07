@@ -14,24 +14,26 @@ export default function Home() {
           <img className="h-full object-cover w-full" src="/comida.avif" />
         </div>
         <div className="z-10 absolute bg-gray-900 opacity-50 h-full w-full"></div>
-        <div className="absolute z-30 flex flex-col items-center justify-center p-10 lg:p-24 w-full h-full">
+        <div className="absolute z-30 flex flex-col items-center justify-center px-10 w-full h-full">
           <div className="flex-grow">
-            <h1 className="text-5xl lg:text-9xl text-gray-300 font-bold text-center italic mt-40">
-              Sergio Gonza
+            <h1 className="text-5xl  text-gray-300 font-bold text-center italic mt-40 font-cloudy">
+              Chef Sergio Gonza
             </h1>
-            <p className="text-stone-300 italic text-center font-bold mt-10 lg:text-4xl text-4xl">
-              Chef especialista en comida internacional
-            </p>
           </div>
-          <div className="flex flex-col justify-center items-center gap-4">
-            <div className="mb-10 font-inter text-stone-200 font-medium mt-10 text-5xl lg:text-4xl max-w-[480px]">
-              <p className="mt-5 leading-20">Reserva tu evento aqui</p>
+          <div className="flex flex-col justify-center items-center gap-4 mb-10">
+            <p className="text-stone-300 italic text-center font-bold mt-8 text-4xl">
+              Servicio de catering personalizado
+            </p>
+            <div className="mb-5  text-stone-300 font-bold mt-5 text-4xl max-w-[580px] italic">
+              <p className="mt-5">Cotiza tu evento aqui</p>
             </div>
-            <div className="px-8 py-4 bg-green-600 text-white rounded-lg cursor-pointer hover:bg-green-700 m-auto">
-              <span className="text-2xl lg:text-4xl mr-5">📱</span>
-              <span className="ml-2 lg:text-4xl text-xl font-bold tracking-wider">
+            <div className="px-12 py-3 bg-green-800 text-white rounded-lg cursor-pointer hover:bg-green-700 m-auto">
+              <span style={{ fontSize: "32px" }} className="lg:text-4xl mr-3">
+                📱
+              </span>
+              <span className="ml-2 text-2xl font-bold tracking-wider relative -top-1">
                 <a
-                  className="font-inter"
+                  className="font-cloudy"
                   target="_"
                   href="https://wa.me/573043943165"
                 >

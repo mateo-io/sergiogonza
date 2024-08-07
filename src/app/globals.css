@@ -10,8 +10,20 @@
 
 @import url("/amelaryas.ttf");
 
+@font-face {
+  font-family: "Cloudy Aurora Serif";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cloudy Aurora Serif"),
+    url("/cloudy-aurora.otf") format("truetype");
+}
+
 .font-amelaryas {
   font-family: "Amelaryas";
+}
+
+.font-cloudy {
+  font-family: "Cloudy Aurora Serif";
 }
 
 .font-inter {
