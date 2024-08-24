@@ -2,6 +2,13 @@
 import { headerHeight } from "@/constants"
 import { ChevronDown } from "lucide-react"
 import Image from "next/image"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 export default function Home() {
   return (
@@ -105,6 +112,36 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="w-full bg-white">
+        <div className="px-40 py-20 m-auto bg-gray-100">
+          <Carousel>
+            <CarouselContent>
+              {[
+                "plato-1.jpg",
+                "plato-2.webp",
+                "plato-3.webp",
+                "plato-4.webp",
+                "plato-5.jpg",
+              ].map((img, index) => (
+                <CarouselItem key={index}>
+                  <Image
+                    src={`/carousel/${img}`}
+                    alt={`Plato ${index + 1}`}
+                    width={550}
+                    height={630}
+                    className="m-auto lg:w-[720px] overflow-hidden"
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+      </div>
+
+      <div className="w-full bg-white px-40 py-20"></div>
     </main>
   )
 }
