@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import { InstagramEmbed } from "react-social-media-embed"
 
 export default function Home() {
   return (
@@ -69,7 +70,7 @@ export default function Home() {
             {/* Text Column */}
             <div className="w-full md:w-1/2">
               <h1 className="text-6xl font-bold lg:mb-20 mb-10 mt-10 lg:mt-0">
-                Conoce al chef
+                Acerca del chef
               </h1>
               <p className="text-xl mb-6">
                 Sergio Gonza es un chef profesional, fanatico de los viajes y
@@ -84,20 +85,6 @@ export default function Home() {
                 platos a su repertorio, desde ceviche Colombiano hasta parilla
                 Argentina, hay un menu para todos los gustos.
               </p>
-              <div className="px-12 py-3 bg-green-800 text-white rounded-lg cursor-pointer hover:bg-green-700 m-auto max-w-[300px] mt-20">
-                <span style={{ fontSize: "32px" }} className="lg:text-4xl mr-3">
-                  📱
-                </span>
-                <span className="ml-2 text-2xl font-bold tracking-wider relative -top-1">
-                  <a
-                    className="font-cloudy"
-                    target="_"
-                    href="https://wa.me/573043943165"
-                  >
-                    304 394 3165
-                  </a>
-                </span>
-              </div>
             </div>
 
             {/* Image Column */}
@@ -114,34 +101,89 @@ export default function Home() {
       </div>
 
       <div className="w-full bg-white">
-        <div className="px-40 py-20 m-auto bg-gray-100">
-          <Carousel>
-            <CarouselContent>
-              {[
-                "plato-1.jpg",
-                "plato-2.webp",
-                "plato-3.webp",
-                "plato-4.webp",
-                "plato-5.jpg",
-              ].map((img, index) => (
-                <CarouselItem key={index}>
-                  <Image
-                    src={`/carousel/${img}`}
-                    alt={`Plato ${index + 1}`}
-                    width={550}
-                    height={630}
-                    className="m-auto lg:w-[720px] overflow-hidden"
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+        <div className="px-5 lg:px-40 lg:py-20 py-5 m-auto bg-gray-200">
+          <div className="max-w-[720px] m-auto">
+            <h1 className="text-6xl font-bold lg:mb-20 mb-10 mt-10 lg:mt-0 text-center">
+              Sabor y Arte
+            </h1>
+            <Carousel>
+              <CarouselContent>
+                {[
+                  "plato-1.jpg",
+                  "plato-2.webp",
+                  "plato-3.webp",
+                  "plato-4.webp",
+                  "plato-5.jpg",
+                ].map((img, index) => (
+                  <CarouselItem key={index}>
+                    <Image
+                      src={`/carousel/${img}`}
+                      alt={`Plato ${index + 1}`}
+                      width={550}
+                      height={630}
+                      className="m-auto lg:w-[680px] overflow-hidden"
+                    />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
         </div>
       </div>
 
-      <div className="w-full bg-white px-40 py-20"></div>
+      <div className="w-full bg-white px-10 py-10 lg:px-40 lg:py-20">
+        <h1 className="text-6xl font-bold lg:mb-20 mb-10 mt-10 lg:mt-0 text-center">
+          Eventos destacados
+        </h1>
+        <div className="flex flex-col xl:flex-row xl:space-x-16 justify-center items-center">
+          <InstagramEmbed
+            url="https://www.instagram.com/reel/C5Ud7K-tDD0/"
+            width={340}
+          />
+
+          <InstagramEmbed
+            url="https://www.instagram.com/reel/CvfUZ8qrH9p/"
+            width={340}
+          />
+
+          <InstagramEmbed
+            url="https://www.instagram.com/reel/C6jEbxrL_Qk/"
+            width={340}
+          />
+        </div>
+      </div>
+
+      <div className="min-h-[500px] bg-gray-200 p-5 lg:py-20">
+        <div className="max-w-[720px] m-auto">
+          <h1 className="text-6xl font-bold lg:mb-10 mb-5 mt-20 lg:mt-0 text-center">
+            Nosotros nos encargamos de tu evento
+          </h1>
+          <p className="text-2xl">
+            Catering y chef en casa con menús personalizados para eventos
+            inolvidables, adaptados a tus gustos y necesidades.
+          </p>
+          <p className="text-3xl mt-8">
+            Linea directa de contacto por{" "}
+            <span className="font-bold">WhatsApp</span>
+          </p>
+          <div className="px-12 py-3 bg-green-800 text-white rounded-lg cursor-pointer hover:bg-green-700 m-auto max-w-[320px] mt-10">
+            <span style={{ fontSize: "32px" }} className="lg:text-4xl mr-3">
+              📱
+            </span>
+            <span className="ml-2 text-2xl font-bold tracking-wider relative -top-1">
+              <a
+                className="font-cloudy"
+                target="_"
+                href="https://wa.me/573043943165"
+              >
+                304 394 3165
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
     </main>
   )
 }
