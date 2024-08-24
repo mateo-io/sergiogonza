@@ -16,7 +16,7 @@ export default function Home() {
         <div className="z-10 absolute bg-gray-900 opacity-50 h-full w-full"></div>
         <div className="absolute z-30 flex flex-col items-center justify-center px-10 w-full h-full">
           <div className="flex-grow">
-            <h1 className="text-7xl  text-gray-300 font-bold text-center italic mt-44 font-cloudy">
+            <h1 className="text-5xl lg:text-7xl  text-gray-300 font-bold text-center italic mt-44 font-cloudy">
               Chef Sergio Gonza
             </h1>
           </div>
@@ -58,9 +58,9 @@ export default function Home() {
 
       <div id="food">
         <div className="min-h-screen w-full bg-white">
-          <div className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between max-w-6xl mx-auto p-6 lg:space-x-6">
+          <div className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto p-6 md:space-x-6">
             {/* Text Column */}
-            <div className="w-full lg:w-1/2">
+            <div className="w-full md:w-1/2">
               <h1 className="text-6xl font-bold lg:mb-20 mb-10 mt-10 lg:mt-0">
                 Conoce al chef
               </h1>
@@ -94,12 +94,12 @@ export default function Home() {
             </div>
 
             {/* Image Column */}
-            <div className="w-full lg:w-1/2 relative min-h-[600px]">
+            <div className="w-full md:w-1/2 relative md:min-h-[600px] min-h-[420px]">
               <Image
                 src="/foto-chef.avif"
                 alt="Product Image"
                 fill={true}
-                className="rounded-lg"
+                className="object-contain rounded-xl overflow-hidden"
               />
             </div>
           </div>
