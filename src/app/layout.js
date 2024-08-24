@@ -13,6 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta name="title" content="Sergio Gonza - Chef y Catering"></meta>
+      <meta
+        name="description"
+        content="Chef Sergio Gonza - Catering y chef en casa con menús personalizados para eventos inolvidables, catering de eventos en Manizales, Caldas, y sus alrededores como Pereira, Chinchina y Santagueda."
+      ></meta>
       <body className={inter.className}>
         <div style={{ height: `${headerHeight}px` }}></div>
         <div
