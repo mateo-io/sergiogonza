@@ -10,10 +10,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { InstagramEmbed } from "react-social-media-embed"
+import WhatsAppIcon from "@/icons/whatsapp"
 
 export default function Home() {
   return (
-    <main className="font-amelaryas">
+    <main className="font-raleway">
       <div
         className="relative"
         style={{ minHeight: `calc(100vh - ${headerHeight}px)` }}
@@ -23,20 +24,24 @@ export default function Home() {
         </div>
         <div className="z-10 absolute bg-gray-900 opacity-50 h-full w-full"></div>
         <div className="absolute z-30 flex flex-col items-center justify-center px-10 w-full h-full">
-          <div className="flex-grow">
-            <h1 className="text-5xl lg:text-7xl  text-gray-300 font-bold text-center italic mt-44 font-cloudy">
-              Chef Sergio Gonza
+          <div className="flex-grow font-cloudy">
+            <h1 className="text-5xl lg:text-8xl  text-gray-200 font-black text-center italic mt-44">
+              Chef
+            </h1>
+            <h1 className="text-5xl lg:text-8xl  text-gray-200 font-black text-center italic mt-5">
+              Sergio Gonza
             </h1>
           </div>
           <div className="flex flex-col justify-center items-center gap-4 mb-10">
             <div className="mb-5  text-stone-300 font-bold mt-5 text-4xl max-w-[580px] italic">
               <p className="mt-5">Cotiza tu evento aqui</p>
             </div>
-            <div className="px-12 py-3 bg-green-800 text-white rounded-lg cursor-pointer hover:bg-green-700 m-auto">
-              <span style={{ fontSize: "32px" }} className="lg:text-4xl mr-3">
-                📱
+            <div className="flex  items-center  justify-center px-12 py-3 bg-indigo-800 text-white rounded-lg cursor-pointer hover:bg-green-700 m-auto">
+              <span style={{ fontSize: "32px" }} className="flex items-center">
+                <WhatsAppIcon />
               </span>
-              <span className="ml-2 text-2xl font-bold tracking-wider relative -top-1">
+
+              <span className="ml-2 text-2xl font-bold tracking-wider relative leading-7 top-0.5">
                 <a
                   className="font-cloudy"
                   target="_"
@@ -73,17 +78,23 @@ export default function Home() {
                 Acerca del chef
               </h1>
               <p className="text-xl mb-6">
-                Sergio Gonza es un chef profesional, fanatico de los viajes y
-                con una pasión gigante por descubrir ingredientes, sabores, y
-                aromas en busca de los mejores platos de comida.
+                Sergio Gonza, oriundo de Manizales, es un chef apasionado por
+                los viajes, la autenticidad culinaria, pero principalmente ocupa
+                su tiempo en la búsqueda constante de ingredientes, sabores y
+                aromas únicos. A lo largo de sus recorridos por Suramérica y
+                Centroamérica, Sergio ha aprendido técnicas y recetas que
+                aportan una personalidad única a su cocina, combinando tradición
+                y creatividad.
               </p>
 
               <p className="text-xl mb-10">
-                Autóctono de Manizales, Caldas, Sergio se ha enfocado en suplir
-                la necesidad de la gente de tener su propio menu personalizado
-                para su evento, desde todos sus viajes Sergio ha añadido muchos
-                platos a su repertorio, desde ceviche Colombiano hasta parilla
-                Argentina, hay un menu para todos los gustos.
+                <strong>La Cocina como Experiencia</strong> es el metodo
+                desarrollado personalizar cada evento, Sergio se enfoca en
+                satisfacer las expectativas de sus clientes, creando menús
+                hechos a la medida. Desde platos autóctonos hasta propuestas
+                innovadoras, su habilidad para transformar ingredientes locales
+                en experiencias culinarias excepcionales hace que cada comida
+                sea especial.
               </p>
             </div>
 

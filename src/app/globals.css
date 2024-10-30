@@ -74,6 +74,13 @@
   }
 }
 
+@import url("/raleway.ttf");
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("/raleway.ttf") format("truetype");
+}
+
 @import url("/amelaryas.ttf");
 
 @font-face {
@@ -94,6 +101,10 @@
 
 .font-inter {
   font-family: "Inter";
+}
+
+.font-raleway {
+  font-family: "Raleway";
 }
 
 html,
